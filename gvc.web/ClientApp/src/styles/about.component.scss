@@ -1,7 +1,16 @@
 app-about {
     .about-links {
+        &__url {
+            display: inline-block;
+            padding-bottom: 15px;
+        }
         i {
-            line-height: 10px;
+            vertical-align: middle;
+            font-size: 30px;
+            margin-right: 5px;
+        }
+        &__username {
+            vertical-align: middle;
         }
     }
 }

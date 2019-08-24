@@ -1,3 +1,8 @@
 <div class="container">
-  <input type="text" class="form-control" aria-describedby="filter" placeholder="Filter" (input)="onFilter($event.target.value)"/>
+  <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1"><i class="fad fa-filter"></i></span>
+      </div>
+      <input id="gvc-filter" type="text" class="form-control" aria-label="filter" aria-describedby="filter" placeholder="Filter" (input)="onFilter($event.target.value)"/>
+    </div>
 </div>
