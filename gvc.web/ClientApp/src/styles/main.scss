@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'app.component';
+@import 'nav-menu.component';
+
+html {
+  font-size: 14px;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
