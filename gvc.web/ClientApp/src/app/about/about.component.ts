@@ -14,32 +14,32 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
 
     this.links.push({
-      url:'http://bit.ly/2zhCJ4T',
-      fontAwesome:'fab fa-facebook',
+      url: 'http://bit.ly/2zhCJ4T',
+      fontAwesome: 'fab fa-facebook',
       username: '@gvcayetano'
     });
 
     this.links.push({
-      url:'http://bit.ly/2MB63Ml',
-      fontAwesome:'fab fa-github',
+      url: 'http://bit.ly/2MB63Ml',
+      fontAwesome: 'fab fa-github',
       username: '@gvcayetano'
     });
 
     this.links.push({
-      url:'http://bit.ly/2PdP9Fz',
-      fontAwesome:'fab fa-instagram',
+      url: 'http://bit.ly/2PdP9Fz',
+      fontAwesome: 'fab fa-instagram',
       username: '@gvcayetano'
     });
 
     this.links.push({
-      url:'http://bit.ly/2ZpLBQq',
-      fontAwesome:'fab fa-linkedin',
+      url: 'http://bit.ly/2ZpLBQq',
+      fontAwesome: 'fab fa-linkedin',
       username: '@gvcayetano'
     });
 
     this.links.push({
-      url:'http://bit.ly/2HikHUr',
-      fontAwesome:'fab fa-twitter',
+      url: 'http://bit.ly/2HikHUr',
+      fontAwesome: 'fab fa-twitter',
       username: '@gvcayetano'
     });
   }
