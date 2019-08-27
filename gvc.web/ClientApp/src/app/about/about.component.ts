@@ -42,14 +42,13 @@ export class AboutComponent implements OnInit {
       fontAwesome: 'fab fa-twitter',
       username: '@gvcayetano'
     });
-    
+
     this.links.push({
       url: 'https://stackshare.io/gvcayetano/my-stack',
       fontAwesome: 'fas fa-layer-group',
       username: '@gvcayetano'
     });
 
-    //
   }
 
 }
