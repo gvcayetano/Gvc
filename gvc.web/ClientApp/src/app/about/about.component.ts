@@ -49,6 +49,12 @@ export class AboutComponent implements OnInit {
       username: '@gvcayetano'
     });
 
+    this.links.push({
+      url: 'https://hub.docker.com/u/gvcayetano',
+      fontAwesome: 'fab fa-docker',
+      username: '@gvcayetano'
+    });
+
   }
 
 }
