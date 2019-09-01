@@ -1,14 +1,14 @@
 <div class="container">
   <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon1"><i class="fad fa-filter"></i></span>
-      </div>
-      <input id="gvc-filter" type="text" class="form-control" aria-label="filter" aria-describedby="filter" placeholder="Filter" (input)="onFilter($event.target.value)"/>
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1"><i class="fad fa-filter"></i></span>
     </div>
-    <div class="row">
-<div class="col-md-12">
-<p>While debugging, add this to your 'Watch' if you would like to see the full path to your app.config or web.config.</p>
-  <span>ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None).FilePath</span>
-</div>
+    <input id="gvc-filter" type="text" class="form-control" aria-label="filter" aria-describedby="filter" placeholder="Filter" (input)="onFilter($event.target.value)"/>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <p>While debugging, add this to your 'Watch' if you would like to see the full path to your app.config or web.config.</p>
+      <code>ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None).FilePath</code>
     </div>
+  </div>
 </div>

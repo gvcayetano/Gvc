@@ -1,8 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+$primary-color: #ff8c00;
 @import 'about.component';
 @import 'app.component';
 @import 'fontawesome.overrides';
 @import 'nav-menu.component';
+@import 'bootsrap.overrides';
+
+
 
 html {
   font-size: 14px;
