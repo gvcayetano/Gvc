@@ -1,12 +1,14 @@
+using Gvc.Data.Contexts;
+using Gvc.Data.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace gvc.web
+namespace Gvc.Web
 {
     public class Startup
     {
@@ -20,6 +22,15 @@ namespace gvc.web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var secrets = GetSecrets();
+            if (secrets != null)
+            {
+                if (!string.IsNullOrEmpty(secrets.ConnectionStrings))
+                {
+                    services.AddDbContext<GvcDbContext>(options => options.UseSqlServer(secrets.ConnectionStrings));
+                }
+            }
+
             services.AddApplicationInsightsTelemetry();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
@@ -68,6 +79,17 @@ namespace gvc.web
                     spa.UseAngularCliServer(npmScript: "start");
                 }
             });
+        }
+
+        private Secrets GetSecrets()
+        {
+            return new Secrets()
+            {
+                ConnectionStrings = Configuration.GetConnectionString("gvc"),
+                //FaceBookAppId = Configuration.GetValue<string>("FaceBookAppId"),
+                //FaceBookAppSecret = Configuration.GetValue<string>("FaceBookAppSecret"),
+                //SymmetricSecurityKey = Configuration.GetValue<string>("SymmetricSecurityKey")
+            };
         }
     }
 }
