@@ -86,6 +86,7 @@ namespace Gvc.Web
             return new Secrets()
             {
                 ConnectionStrings = Configuration.GetConnectionString("gvc"),
+                //ConnectionStrings = Configuration.GetConnectionString("gvcMySql"),
                 //FaceBookAppId = Configuration.GetValue<string>("FaceBookAppId"),
                 //FaceBookAppSecret = Configuration.GetValue<string>("FaceBookAppSecret"),
                 //SymmetricSecurityKey = Configuration.GetValue<string>("SymmetricSecurityKey")
