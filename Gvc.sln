@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gvc.Data", "Gvc.Data\Gvc.Da
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gvc.Common", "Gvc.Common\Gvc.Common.csproj", "{CDCA2C83-41DD-41EE-9EB2-24D654B74B65}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gvc.ClientApp", "Gvc.ClientApp\Gvc.ClientApp.csproj", "{EED18866-9859-4292-B2BB-EC0F66710A11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,9 @@ Global
 		{CDCA2C83-41DD-41EE-9EB2-24D654B74B65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDCA2C83-41DD-41EE-9EB2-24D654B74B65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDCA2C83-41DD-41EE-9EB2-24D654B74B65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EED18866-9859-4292-B2BB-EC0F66710A11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EED18866-9859-4292-B2BB-EC0F66710A11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EED18866-9859-4292-B2BB-EC0F66710A11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
