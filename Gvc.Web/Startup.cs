@@ -38,7 +38,7 @@ namespace Gvc.Web
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
-                configuration.RootPath = "ClientApp/dist";
+                configuration.RootPath = "..\\Gvc.ClientApp/dist";
             });
         }
 
@@ -72,7 +72,7 @@ namespace Gvc.Web
                 // To learn more about options for serving an Angular SPA from ASP.NET Core,
                 // see https://go.microsoft.com/fwlink/?linkid=864501
 
-                spa.Options.SourcePath = "ClientApp";
+                spa.Options.SourcePath = "..\\Gvc.ClientApp";
 
                 if (env.IsDevelopment())
                 {
