@@ -55,6 +55,13 @@ export class AboutComponent implements OnInit {
       username: '@gvcayetano'
     });
 
+    this.links.push({
+      url: 'https://www.twitch.tv/iamjayjay',
+      fontAwesome: 'fab fa-twitch',
+      username: '@iamjayjay'
+    });
+
+
   }
 
 }

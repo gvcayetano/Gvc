@@ -1,15 +1,37 @@
 .fad {
-    color: #FF8C00;
+  color: #FF8C00;
+}
+
+.fa {
+  &-docker {
+    color: #0db7ed;
   }
-  
-  .fa-github {
+
+  &-facebook {
+    color: #3b5998;
+  }
+
+  &-github {
     color: #000;
   }
-  
-  .fa-instagram {
+
+  &-instagram {
     color: transparent;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     background-clip: text;
     -webkit-background-clip: text;
   }
+
+  &-linkedin {
+    color: #0077B5;
+  }
+
+  &-twitch {
+    color: #6441a5;
+  }
+
+  &-twitter {
+    color: #1DA1F2;
+  }
+}
