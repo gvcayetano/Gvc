@@ -17,8 +17,4 @@
     <None Remove="node_modules\**" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="dist-server\" />
-  </ItemGroup>
-
 </Project>
