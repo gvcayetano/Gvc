@@ -76,7 +76,8 @@ namespace Gvc.Web
 
                 if (env.IsDevelopment())
                 {
-                    spa.UseAngularCliServer(npmScript: "start");
+                    // Launch development server for Vue.js
+                    spa.UseVueDevelopmentServer();
                 }
             });
         }

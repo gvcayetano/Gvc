@@ -17,4 +17,11 @@
     <None Remove="node_modules\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include=".nuxt\components\" />
+    <Folder Include=".nuxt\dist\client\icons\" />
+    <Folder Include=".nuxt\dist\server\" />
+    <Folder Include=".nuxt\views\" />
+  </ItemGroup>
+
 </Project>
