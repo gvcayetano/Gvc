@@ -37,8 +37,8 @@ namespace Gvc.Web
                 var processInfo = new ProcessStartInfo
                 {
                     FileName = isWindows ? "cmd" : "npm",
-                    Arguments = $"{(isWindows ? "/c npm " : "")}run serve",
-                    WorkingDirectory = "client-app",
+                    Arguments = $"{(isWindows ? "/c npm " : "")}run dev",
+                    WorkingDirectory = "..\\Gvc.ClientApp",
                     RedirectStandardError = true,
                     RedirectStandardInput = true,
                     RedirectStandardOutput = true,

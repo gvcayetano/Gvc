@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -22,6 +22,7 @@
     <Folder Include=".nuxt\dist\client\icons\" />
     <Folder Include=".nuxt\dist\server\" />
     <Folder Include=".nuxt\views\" />
+    <Folder Include="assets\styles\" />
   </ItemGroup>
 
 </Project>

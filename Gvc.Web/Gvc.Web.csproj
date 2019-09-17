@@ -17,6 +17,7 @@
     <PackageReference Include="Microsoft.Azure.KeyVault" Version="3.0.4" />
     <PackageReference Include="Microsoft.Extensions.Configuration.AzureKeyVault" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
   </ItemGroup>
 
   <!--<ItemGroup>
@@ -25,10 +26,6 @@
     <None Remove="$(SpaRoot)**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
   </ItemGroup>-->
-
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Gvc.Common\Gvc.Common.csproj" />
