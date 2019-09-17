@@ -32,6 +32,13 @@
     <ProjectReference Include="..\Gvc.Data\Gvc.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="x\runtimes\win\lib\netcoreapp2.0\" />
+    <Folder Include="x\runtimes\win\lib\netstandard2.0\" />
+    <Folder Include="x\wwwroot\" />
+    <Folder Include="x\x\Gvc.ClientApp\dist\_nuxt\" />
+  </ItemGroup>
+
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
     <!-- Ensure Node.js is installed -->
     <Exec Command="node --version" ContinueOnError="true">
@@ -45,7 +52,7 @@
   <Target Name="PublishRunWebpack" AfterTargets="ComputeFilesToPublish">
     <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
     <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
-    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run generate" />
 
     <!-- Include the newly-built files in the publish output -->
     <ItemGroup>

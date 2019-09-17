@@ -39,7 +39,7 @@
     },
     methods: {
       async getSocialMediaLinks() {
-        this.socialMediaLinks = await this.$axios.$get('https://localhost:44374/api/about')
+        this.socialMediaLinks = await this.$axios.$get('/api/about')
       }
     },
     mounted() {
