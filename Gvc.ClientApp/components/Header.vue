@@ -1,23 +1,25 @@
 <template>
-    <header>
-        <b-navbar toggleable="sm" >
-            <nuxt-link to="/">
-                <b-navbar-brand>
-                <i class="fad fa-code"></i> GVC
-                </b-navbar-brand>
-            </nuxt-link>
+    <header class="border-bottom box-shadow mb-3">
+        <b-container>
+            <b-navbar toggleable="sm">
+                <nuxt-link to="/">
+                    <b-navbar-brand>
+                        <i class="fad fa-code"></i> GVC
+                    </b-navbar-brand>
+                </nuxt-link>
 
-            <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+                <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
-            <b-collapse id="nav-collapse" is-nav>
-                
-                <b-navbar-nav class="ml-auto">
-                    <b-nav-item to="/">Home</b-nav-item>
-                    <b-nav-item to="/about" >About</b-nav-item>
-                </b-navbar-nav>
+                <b-collapse id="nav-collapse" is-nav>
 
-            </b-collapse>
-        </b-navbar>
+                    <b-navbar-nav class="ml-auto">
+                        <b-nav-item to="/">Home</b-nav-item>
+                        <b-nav-item to="/about">About</b-nav-item>
+                    </b-navbar-nav>
+
+                </b-collapse>
+            </b-navbar>
+        </b-container>
     </header>
 </template>
 

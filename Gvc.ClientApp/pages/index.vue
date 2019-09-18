@@ -1,6 +1,9 @@
 <template>
     <div>
         <Header />
+        <b-container>
+
+        </b-container>
     </div>
 </template>
 

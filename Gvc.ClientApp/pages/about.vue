@@ -1,22 +1,22 @@
 <template>
-  <div>
-    <Header />
-      <div>
-        <div class="col-md-12">
-          <h5>Hi!</h5>
-          <p>You can call me 'Jayjay'. I'm a software engineer based in Manila. </p>
-          <p>Here are some links to get to know me better:</p>
-        </div>
-      </div>
-      <div class="about-links" v-for="link in socialMediaLinks" :key="link">
-        <div class="col-md-12">
-          <a class="about-links__url" :href="link.url" target="_blank">
-            <i :class="link.fontAwesomeClass"></i>
-            <span class="about-links__username">{{link.username}}</span>
-          </a>
-        </div>
-      </div>
-  </div>
+    <div>
+        <Header />
+        <b-container>
+            <div class="col-md-12">
+                <h5>Hi!</h5>
+                <p>You can call me 'Jayjay'. I'm a software engineer based in Manila. </p>
+                <p>Here are some links to get to know me better:</p>
+            </div>
+            <div class="about-links" v-for="link in socialMediaLinks" :key="link.url">
+                <div class="col-md-12">
+                    <a class="about-links__url" :href="link.url" target="_blank">
+                        <i :class="link.fontAwesomeClass"></i>
+                        <span class="about-links__username">{{link.username}}</span>
+                    </a>
+                </div>
+            </div>
+        </b-container>
+    </div>
 </template>
 
 <script>
