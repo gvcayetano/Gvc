@@ -1,19 +1,15 @@
 <template>
-  <div>
-    <Header />
-    <div class="container">
+    <div>
+        <Header />
     </div>
-  </div>
 </template>
 
 <script>
   import Header from '~/components/Header.vue'
-  import Logo from '~/components/Logo.vue'
 
   export default {
     components: {
-      Header,
-      Logo
+      Header
     },
     head() {
       return {

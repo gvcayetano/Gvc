@@ -8,7 +8,7 @@ export default {
         title: process.env.npm_package_name || '',
         meta: [
             { charset: 'utf-8' },
-            { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+            { name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
             { hid: 'description', name: 'description', content: 'A software engineer based in Manila. Logging solutions to various problems. A Microsoft Certified Solutions Developer ( MCSD ). A casual gamer and stock market enthusiast.' },
             { name: 'keywords', content: 'Software Engineer, MCSD, Manila, C#, HTML, CSS, JavaScript, Angular, Visual Studio, Code, Microsoft, Certified, Solutions, Developer, App, Builder' }
         ],

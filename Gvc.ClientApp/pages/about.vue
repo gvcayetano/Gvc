@@ -1,15 +1,14 @@
 <template>
   <div>
     <Header />
-    <div class="container">
-      <div class="row">
+      <div>
         <div class="col-md-12">
           <h5>Hi!</h5>
           <p>You can call me 'Jayjay'. I'm a software engineer based in Manila. </p>
           <p>Here are some links to get to know me better:</p>
         </div>
       </div>
-      <div class="row about-links" v-for="link in socialMediaLinks">
+      <div class="about-links" v-for="link in socialMediaLinks" :key="link">
         <div class="col-md-12">
           <a class="about-links__url" :href="link.url" target="_blank">
             <i :class="link.fontAwesomeClass"></i>
@@ -17,7 +16,6 @@
           </a>
         </div>
       </div>
-    </div>
   </div>
 </template>
 
