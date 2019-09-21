@@ -37,12 +37,16 @@
     },
     methods: {
       async getSocialMediaLinks() {
-        this.socialMediaLinks = await this.$axios.$get('/api/about')
+        this.socialMediaLinks = await this.$axios.$get('/api/about', { progress: true })
       }
     },
-    mounted() {
-      this.getSocialMediaLinks();
-    }
+    mounted () {
+    this.$nextTick(() => {
+        this.$nuxt.$loading.start();
+        this.getSocialMediaLinks();
+        setTimeout(() => this.$nuxt.$loading.finish(), 500);
+    })
+  }
   }
 </script>
 
