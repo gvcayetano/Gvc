@@ -1,12 +1,11 @@
-using Gvc.Data.Contexts;
 using Gvc.Data.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using GvcDbContext = Gvc.Web.Contexts.GvcDbContext;
 
 namespace Gvc.Web
 {

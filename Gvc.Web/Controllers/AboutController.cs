@@ -1,6 +1,9 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using Gvc.Data.Models;
+using Gvc.Web.Contexts;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Gvc.Web.Controllers
 {
@@ -8,61 +11,19 @@ namespace Gvc.Web.Controllers
     [ApiController]
     public class AboutController : ControllerBase
     {
-        [HttpGet]
-        public ActionResult GetSocialMedia()
+        private readonly GvcDbContext _gvcDbContext;
+
+        public AboutController(
+            GvcDbContext gvcDbContext
+        )
         {
-            var socialMediaLinks = new List<SocialMediaLink>()
-            {
-                new SocialMediaLink()
-                {
-                    Url = "http://bit.ly/2zhCJ4T",
-                    FontAwesomeClass = "fab fa-facebook",
-                    Username = "@gvcayetano"
-                },
-                new SocialMediaLink()
-                {
-                    Url = "http://bit.ly/2MB63Ml",
-                    FontAwesomeClass = "fab fa-github",
-                    Username = "@gvcayetano"
-                },
-                new SocialMediaLink()
-                {
-                    Url = "http://bit.ly/2PdP9Fz",
-                    FontAwesomeClass = "fab fa-instagram",
-                    Username = "@gvcayetano"
-                },
-                new SocialMediaLink()
-                {
-                    Url = "http://bit.ly/2ZpLBQq",
-                    FontAwesomeClass = "fab fa-linkedin",
-                    Username = "@gvcayetano"
-                },
-                new SocialMediaLink()
-                {
-                    Url = "http://bit.ly/2HikHUr",
-                    FontAwesomeClass = "fab fa-twitter",
-                    Username = "@gvcayetano"
-                },
-                new SocialMediaLink()
-                {
-                    Url = "https://stackshare.io/gvcayetano/my-stack",
-                    FontAwesomeClass = "fas fa-layer-group",
-                    Username = "@gvcayetano"
-                },
-                new SocialMediaLink()
-                {
-                    Url = "https://hub.docker.com/u/gvcayetano",
-                    FontAwesomeClass = "fab fa-docker",
-                    Username = "@gvcayetano"
-                },
-                new SocialMediaLink()
-                {
-                    Url = "https://www.twitch.tv/iamjayjay",
-                    FontAwesomeClass = "fab fa-twitch",
-                    Username = "@iamjayjay"
-                }
-            };
-            return Ok(socialMediaLinks);
+            _gvcDbContext = gvcDbContext;
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<SocialMediaLink>>> GetSocialMediaLinks()
+        {
+            return await _gvcDbContext.SocialMediaLinks.ToListAsync();
         }
     }
 }

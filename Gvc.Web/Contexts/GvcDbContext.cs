@@ -2,7 +2,7 @@ using Gvc.Data.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace Gvc.Data.Contexts
+namespace Gvc.Web.Contexts
 {
     public class GvcDbContext : IdentityDbContext<ApplicationUser>
     {
