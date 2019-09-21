@@ -11,51 +11,51 @@ namespace Gvc.Web.Controllers
         [HttpGet]
         public ActionResult GetSocialMedia()
         {
-            var socialMediaLinks = new List<SocialMediaLinks>()
+            var socialMediaLinks = new List<SocialMediaLink>()
             {
-                new SocialMediaLinks()
+                new SocialMediaLink()
                 {
                     Url = "http://bit.ly/2zhCJ4T",
                     FontAwesomeClass = "fab fa-facebook",
                     Username = "@gvcayetano"
                 },
-                new SocialMediaLinks()
+                new SocialMediaLink()
                 {
                     Url = "http://bit.ly/2MB63Ml",
                     FontAwesomeClass = "fab fa-github",
                     Username = "@gvcayetano"
                 },
-                new SocialMediaLinks()
+                new SocialMediaLink()
                 {
                     Url = "http://bit.ly/2PdP9Fz",
                     FontAwesomeClass = "fab fa-instagram",
                     Username = "@gvcayetano"
                 },
-                new SocialMediaLinks()
+                new SocialMediaLink()
                 {
                     Url = "http://bit.ly/2ZpLBQq",
                     FontAwesomeClass = "fab fa-linkedin",
                     Username = "@gvcayetano"
                 },
-                new SocialMediaLinks()
+                new SocialMediaLink()
                 {
                     Url = "http://bit.ly/2HikHUr",
                     FontAwesomeClass = "fab fa-twitter",
                     Username = "@gvcayetano"
                 },
-                new SocialMediaLinks()
+                new SocialMediaLink()
                 {
                     Url = "https://stackshare.io/gvcayetano/my-stack",
                     FontAwesomeClass = "fas fa-layer-group",
                     Username = "@gvcayetano"
                 },
-                new SocialMediaLinks()
+                new SocialMediaLink()
                 {
                     Url = "https://hub.docker.com/u/gvcayetano",
                     FontAwesomeClass = "fab fa-docker",
                     Username = "@gvcayetano"
                 },
-                new SocialMediaLinks()
+                new SocialMediaLink()
                 {
                     Url = "https://www.twitch.tv/iamjayjay",
                     FontAwesomeClass = "fab fa-twitch",

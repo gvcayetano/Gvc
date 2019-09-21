@@ -11,5 +11,6 @@ namespace Gvc.Data.Contexts
             : base(options)
         {
         }
+        public DbSet<SocialMediaLink> SocialMediaLinks { get; set; }
     }
 }

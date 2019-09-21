@@ -1,6 +1,6 @@
 ﻿namespace Gvc.Data.Models
 {
-    public class SocialMediaLinks
+    public class SocialMediaLink
     {
         public string FontAwesomeClass { get; set; }
         public string Url { get; set; }
