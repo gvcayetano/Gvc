@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="dist\**" />
+    <Compile Remove="dist-server\**" />
+    <Compile Remove="node_modules\**" />
+    <Compile Remove=".nuxt\**" />
+    <EmbeddedResource Remove="dist\**" />
+    <EmbeddedResource Remove="dist-server\**" />
+    <EmbeddedResource Remove="node_modules\**" />
+    <EmbeddedResource Remove=".nuxt\**" />
+    <None Remove="dist-server\**" />
+    <None Remove="dist\**" />
+    <None Remove="node_modules\**" />
+    <None Remove=".nuxt\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="public\" />
+    <Folder Include="scss\" />
+  </ItemGroup>
+
+</Project>
