@@ -2,6 +2,7 @@ using Gvc.Data.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -68,15 +69,11 @@ namespace Gvc.Web
 
             app.UseSpa(spa =>
             {
-                // To learn more about options for serving an Angular SPA from ASP.NET Core,
-                // see https://go.microsoft.com/fwlink/?linkid=864501
-
                 spa.Options.SourcePath = "..\\Gvc.ClientApp";
 
                 if (env.IsDevelopment())
                 {
-                    // Launch development server for Vue.js
-                    spa.UseVueDevelopmentServer();
+                    spa.UseReactDevelopmentServer(npmScript: "start");
                 }
             });
         }

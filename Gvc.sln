@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gvc.Data", "Gvc.Data\Gvc.Da
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gvc.Common", "Gvc.Common\Gvc.Common.csproj", "{CDCA2C83-41DD-41EE-9EB2-24D654B74B65}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gvc.ClientApp", "Gvc.ClientApp\Gvc.ClientApp.csproj", "{EED18866-9859-4292-B2BB-EC0F66710A11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gvc.ClientAapp", "Gvc.ClientApp\Gvc.ClientAapp.csproj", "{EED18866-9859-4292-B2BB-EC0F66710A11}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

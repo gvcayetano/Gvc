@@ -1,0 +1,15 @@
+.about-links {
+  &__url {
+    display: inline-block;
+    padding-bottom: 15px;
+  }
+  i {
+    vertical-align: middle;
+    font-size: 30px;
+    margin-right: 5px;
+  }
+  &__username {
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+}

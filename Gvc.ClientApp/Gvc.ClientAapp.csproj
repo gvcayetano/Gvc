@@ -20,4 +20,9 @@
     <None Remove=".nuxt\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="public\" />
+    <Folder Include="scss\" />
+  </ItemGroup>
+
 </Project>
