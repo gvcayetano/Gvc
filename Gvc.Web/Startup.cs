@@ -38,7 +38,7 @@ namespace Gvc.Web
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
-                configuration.RootPath = "Gvc.ClientApp/dist";
+                configuration.RootPath = "Gvc.ClientApp/build";
             });
         }
 
