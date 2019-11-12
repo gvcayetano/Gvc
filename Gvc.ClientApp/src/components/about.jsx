@@ -21,7 +21,12 @@ class About extends Component {
             <p>Here are some links to get to know me better:</p>
             {this.state.socialMediaLinks.map(sml => (
               <div className="about-links" key={sml.id}>
-                <a className="about-links__url" href={sml.url} target="_blank">
+                <a
+                  className="about-links__url"
+                  href={sml.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i className={sml.fontAwesomeClass}></i>
                   <span className="about-links__username">{sml.username}</span>
                 </a>
