@@ -12,12 +12,14 @@ namespace Gvc.Web
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public IConfiguration Configuration { get; }
+        private IHostingEnvironment HostingEnvironment { get;  }
+
+        public Startup(IConfiguration configuration, IHostingEnvironment hostingEnvironment)
         {
             Configuration = configuration;
+            HostingEnvironment = hostingEnvironment;
         }
-
-        public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -35,7 +37,7 @@ namespace Gvc.Web
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            // In production, the Angular files will be served from this directory
+            // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
                 configuration.RootPath = "Gvc.ClientApp/build";
@@ -82,7 +84,7 @@ namespace Gvc.Web
         {
             return new Secrets()
             {
-                ConnectionStrings = Configuration.GetConnectionString("gvc"),
+                ConnectionStrings = HostingEnvironment.IsDevelopment() ? Configuration.GetConnectionString("gvc-dev") : Configuration.GetConnectionString("gvc"),
                 //ConnectionStrings = Configuration.GetConnectionString("gvcMySql"),
                 //FaceBookAppId = Configuration.GetValue<string>("FaceBookAppId"),
                 //FaceBookAppSecret = Configuration.GetValue<string>("FaceBookAppSecret"),
