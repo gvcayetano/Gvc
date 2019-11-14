@@ -2,6 +2,8 @@
   &__url {
     display: inline-block;
     padding-bottom: 15px;
+    min-width: 40px;
+    text-align: center;
   }
   i {
     vertical-align: middle;
@@ -10,6 +12,5 @@
   }
   &__username {
     margin-left: 6px;
-    vertical-align: middle;
   }
 }
